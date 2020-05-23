@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".drone_fly_down_flow.RTKSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#6C6C6C"
+        android:orientation="vertical"
+        android:layout_marginBottom="5sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="#EAEAEA">
+            <ImageView
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/drone_rtk"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="RTK Setting"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="RTK 설정"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10sp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="75sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="RETURN"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK Function"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK 기능"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/sp_rtk_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK Signal Method"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK 신호방식"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_rtk_sm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RTK Base Station"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Channel"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="활성 채널"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/sp_rtk_open_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device Working Mode"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="디바이스 동작모드"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/sp_rtk_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batter Status"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배터리 잔량"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_rtk_bs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advanced Setting"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고급설정"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/sp_rtk_as"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/et_normal">
+            <LinearLayout
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK Satellite Status"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTK 인공위성 신호"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_rtk_ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+<!-- 이승복 제작 -->
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".drone_fly_down_flow.RTKSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#6C6C6C"
+        android:orientation="vertical"
+        android:layout_marginBottom="5sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="#EAEAEA">
+            <ImageView
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/drone_fly"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/btn_drone_fly_eng"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/btn_drone_fly_kor"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10sp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="75sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="RETURN"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#B8B8B8">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnCount="2">
+                <TextView
+                    android:text="RTX Function"
+                    android:layout_gravity="right"/>
+                <Button
+                    android:text="                    "/>
+                <TextView
+                    android:text="RTX Signal Method"
+                    android:layout_gravity="right"/>
+                <TextView
+                    android:text=" RTK Base Station"/>
+                <TextView
+                    android:text="Open channel"
+                    android:layout_gravity="right"/>
+                <Button
+                    android:text="                    "/>
+                <TextView
+                    android:text="Device Working Mode"
+                    android:layout_gravity="right"/>
+                <Button
+                    android:layout_height="106dp"
+                    android:text="Base Station RTK-D Handheld RTK_R" />
+                <TextView
+                    android:text="Battery status"
+                    android:layout_gravity="right"/>
+                <TextView
+                    android:text="     >                   "/>
+                <TextView
+                    android:text="Advanced Settings"
+                    android:layout_gravity="right"/>
+                <TextView
+                    android:text="     >               "/>
+                <TextView  android:text="RTX Satellite Status"
+                    android:layout_gravity="right"/>
+                <Button android:text="                    "/>
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout> -->

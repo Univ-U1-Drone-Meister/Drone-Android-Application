@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_aircraft_setting"
+        android:title="Aircraft Setting" />
+    <item android:id="@+id/menu_sprasying_system_setting"
+        android:title="Spraying System Setting" />
+    <item android:id="@+id/menu_rtk_setting"
+        android:title="RTK Setting" />
+    <item android:id="@+id/menu_radar_setting"
+        android:title="Radar Setting">
+        <!-- 서브메뉴 만드는 법 -->
+        <!--<menu>
+            <group>
+                <item android:id="@+id/menu_radar_setting1"
+                    android:title="Radar Setting"/>
+                <item android:id="@+id/menu_radar_setting2"
+                    android:title="Radar Setting"/>
+                <item android:id="@+id/menu_radar_setting3"
+                    android:title="Radar Setting"/>
+            </group>
+        </menu>-->
+    </item>
+</menu>

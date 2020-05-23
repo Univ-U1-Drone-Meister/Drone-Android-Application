@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.seon.u1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="kr.seon.u1.UserInformation" android:label="UserInformation">
+        </activity>
+        <activity android:name="kr.seon.u1.DroneSetting" android:label="DroneSetting">
+        </activity>
+        <activity android:name="kr.seon.u1.DroneInformation" android:label="DroneInformation">
+        </activity>
+        <activity android:name="kr.seon.u1.DroneFly" android:label="DroneFly">
+        </activity>
+        <activity android:name="kr.seon.u1.drone_fly_down_flow.RTKSetting" android:label="RTKSetting">
+        </activity>
+        <activity android:name="kr.seon.u1.drone_fly_down_flow.AircraftSetting" android:label="AircraftSetting">
+        </activity>
+        <activity android:name="kr.seon.u1.drone_fly_down_flow.SprayingSystemSetting" android:label="SprayingSystemSetting">
+        </activity>
+        <activity android:name="kr.seon.u1.drone_fly_down_flow.RadarSetting" android:label="RadarSetting">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="rtk_function">
+        <item>function1</item>
+        <item>function2</item>
+        <item>function3</item>
+        <item>function4</item>
+    </string-array>
+
+    <string-array name="device_working_mode">
+        <item>Base Station RTK-D</item>
+        <item>Handheld RTK_R</item>
+    </string-array>
+
+    <string-array name="open_channel">
+        <item>channel_1</item>
+        <item>channel_2</item>
+        <item>channel_3</item>
+        <item>channel_4</item>
+        <item>channel_5</item>
+        <item>channel_6</item>
+    </string-array>
+
+    <string-array name="advanced_setting">
+        <item>setting_1</item>
+        <item>setting_2</item>
+        <item>setting_3</item>
+        <item>setting_4</item>
+        <item>setting_5</item>
+        <item>setting_6</item>
+    </string-array>
+
+    <string-array name="aircraft_advanced_setting">
+        <item>setting_1</item>
+        <item>setting_2</item>
+        <item>setting_3</item>
+        <item>setting_4</item>
+        <item>setting_5</item>
+        <item>setting_6</item>
+    </string-array>
+
+    <string-array name="nozzle_model">
+        <item>model_1</item>
+        <item>model_2</item>
+        <item>model_3</item>
+        <item>model_4</item>
+    </string-array>
+
+</resources>

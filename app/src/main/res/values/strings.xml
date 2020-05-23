@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">U1_DRONE</string>
+    <string name="btn_drone_info_kor">드론정보</string>
+    <string name="btn_drone_info_eng">Drone Information</string>
+    <string name="btn_drone_setting_kor">드론세팅</string>
+    <string name="btn_drone_setting_eng">Drone Setting</string>
+    <string name="btn_user_info_kor">사용자정보</string>
+    <string name="btn_user_info_eng">User Information</string>
+    <string name="btn_drone_fly_kor">드론비행</string>
+    <string name="btn_drone_fly_eng">Drone Flying</string>
+    <string name="version">1.0.1</string>
+</resources>
