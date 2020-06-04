@@ -1,4 +1,2 @@
 rootProject.name='U1'
-include ':app', 'DJI-SDK-LIB'
-include ':u1_dji'
-include ':dji-lib'
+include ':app'
