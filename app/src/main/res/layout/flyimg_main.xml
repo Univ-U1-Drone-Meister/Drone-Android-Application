@@ -85,13 +85,15 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:src="@drawable/fly_able"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FLYing"
-                android:textSize="30sp"
+                android:fontFamily="sans-serif-black"
+                android:text="Ying"
                 android:textColor="#ffffff"
-                android:fontFamily="sans-serif-black"/>
+                android:textSize="30sp" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
